@@ -1,0 +1,80 @@
+{
+    "name": "ds_gitub",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_github",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "file_flag": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "HttpServerLocation",
+                "relativeUrl": {
+                    "value": "anshlambagit/Azure-DE-Project-Resources/refs/heads/main/Raw%20Data/@{dataset().file_flag}",
+                    "type": "Expression"
+                }
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "Branch_ID",
+                "type": "String"
+            },
+            {
+                "name": "Dealer_ID",
+                "type": "String"
+            },
+            {
+                "name": "Model_ID",
+                "type": "String"
+            },
+            {
+                "name": "Revenue",
+                "type": "String"
+            },
+            {
+                "name": "Units_Sold",
+                "type": "String"
+            },
+            {
+                "name": "Date_ID",
+                "type": "String"
+            },
+            {
+                "name": "Day",
+                "type": "String"
+            },
+            {
+                "name": "Month",
+                "type": "String"
+            },
+            {
+                "name": "Year",
+                "type": "String"
+            },
+            {
+                "name": "BranchName",
+                "type": "String"
+            },
+            {
+                "name": "DealerName",
+                "type": "String"
+            },
+            {
+                "name": "Product_Name",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
