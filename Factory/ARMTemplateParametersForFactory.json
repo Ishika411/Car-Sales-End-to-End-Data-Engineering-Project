@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "factoryName": {
+            "value": "Car-Sales-ishika-adf"
+        },
+        "ls_carsDB_password": {
+            "value": ""
+        },
+        "AzureDataLakeStorage1_accountKey": {
+            "value": ""
+        },
+        "ls_bronze_accountKey": {
+            "value": ""
+        },
+        "ls_github_properties_typeProperties_url": {
+            "value": "https://raw.githubusercontent.com"
+        },
+        "ls_carsDB_properties_typeProperties_server": {
+            "value": "carsalesserverishika.database.windows.net"
+        },
+        "ls_carsDB_properties_typeProperties_database": {
+            "value": "carSalesDB"
+        },
+        "ls_carsDB_properties_typeProperties_userName": {
+            "value": "adminishika"
+        },
+        "AzureDataLakeStorage1_properties_typeProperties_url": {
+            "value": "https://carsalesdatalakeishika.dfs.core.windows.net/"
+        },
+        "ls_bronze_properties_typeProperties_url": {
+            "value": "https://carsalesdatalakeishika.dfs.core.windows.net/"
+        }
+    }
+}
